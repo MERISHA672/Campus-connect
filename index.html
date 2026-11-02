@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="CampusConnect - A modern student university platform">
+
+    <title>CampusConnect | Student Platform</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= SIDEBAR ================= -->
+
+<aside class="sidebar" id="sidebar">
+
+    <div class="logo">
+        <div class="logo-icon">
+            <i class="fas fa-graduation-cap"></i>
+        </div>
+
+        <div>
+            <strong>Campus</strong><span>Connect</span>
+        </div>
+    </div>
+
+    <nav>
+
+        <a href="#dashboard" class="active">
+            <i class="fas fa-house"></i>
+            Dashboard
+        </a>
+
+        <a href="#courses">
+            <i class="fas fa-book"></i>
+            My Courses
+        </a>
+
+        <a href="#assignments">
+            <i class="fas fa-file-lines"></i>
+            Assignments
+            <span class="notification">3</span>
+        </a>
+
+        <a href="#events">
+            <i class="fas fa-calendar"></i>
+            Events
+        </a>
+
+        <a href="#community">
+            <i class="fas fa-users"></i>
+            Community
+        </a>
+
+    </nav>
+
+    <div class="sidebar-bottom">
+
+        <a href="#">
+            <i class="fas fa-gear"></i>
+            Settings
+        </a>
+
+        <a href="#">
+            <i class="fas fa-circle-question"></i>
+            Help Center
+        </a>
+
+    </div>
+
+</aside>
+
+
+<!-- ================= MAIN ================= -->
+
+<main class="main">
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <button class="mobile-menu" id="mobileMenu">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="search">
+
+            <i class="fas fa-search"></i>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search courses, assignments..."
+            >
+
+        </div>
+
+        <div class="header-right">
+
+            <button class="theme-btn" id="themeBtn">
+                <i class="fas fa-moon"></i>
+            </button>
+
+            <button class="bell">
+                <i class="fas fa-bell"></i>
+                <span></span>
+            </button>
+
+            <div class="profile">
+
+                <div class="avatar">
+                    M
+                </div>
+
+                <div>
+                    <strong>Melissa</strong>
+                    <small>IT Student</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= DASHBOARD ================= -->
+
+    <section id="dashboard" class="page">
+
+        <div class="welcome">
+
+            <div>
+
+                <p class="eyebrow">
+                    MONDAY, NOVEMBER 2, 2026
+                </p>
+
+                <h1>
+                    Good evening, Melissa 👋
+                </h1>
+
+                <p>
+                    Here's what's happening with your studies today.
+                </p>
+
+            </div>
+
+            <button class="primary-btn">
+                <i class="fas fa-plus"></i>
+                Add Task
+            </button>
+
+        </div>
+
+
+        <!-- STATISTICS -->
+
+        <div class="stats">
+
+            <div class="stat">
+
+                <div class="stat-icon purple">
+                    <i class="fas fa-book-open"></i>
+                </div>
+
+                <div>
+                    <small>Active Courses</small>
+                    <h2>6</h2>
+                    <p class="positive">
+                        <i class="fas fa-arrow-up"></i>
+                        2 this semester
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="stat">
+
+                <div class="stat-icon blue">
+                    <i class="fas fa-file-circle-check"></i>
+                </div>
+
+                <div>
+                    <small>Assignments</small>
+                    <h2>12</h2>
+                    <p class="positive">
+                        8 completed
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="stat">
+
+                <div class="stat-icon orange">
+                    <i class="fas fa-clock"></i>
+                </div>
+
+                <div>
+                    <small>Pending</small>
+                    <h2>4</h2>
+                    <p class="warning">
+                        Due this week
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="stat">
+
+                <div class="stat-icon green">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+
+                <div>
+                    <small>Average Progress</small>
+                    <h2>78%</h2>
+                    <p class="positive">
+                        <i class="fas fa-arrow-up"></i>
+                        6% improvement
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONTENT GRID -->
+
+        <div class="dashboard-grid">
+
+            <!-- COURSES -->
+
+            <div class="panel courses-panel" id="courses">
+
+                <div class="panel-header">
+
+                    <div>
+                        <h2>My Courses</h2>
+                        <p>Continue learning where you left off.</p>
+                    </div>
+
+                    <a href="#">View all</a>
+
+                </div>
+
+
+                <div class="course-list">
+
+                    <article class="course">
+
+                        <div class="course-icon database">
+                            <i class="fas fa-database"></i>
+                        </div>
+
+                        <div class="course-info">
+
+                            <div class="course-title">
+                                <h3>Database Systems</h3>
+                                <span>72%</span>
+                            </div>
+
+                            <p>Year 1 • Semester 2</p>
+
+                            <div class="progress">
+                                <span style="width:72%"></span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="course">
+
+                        <div class="course-icon web">
+                            <i class="fas fa-code"></i>
+                        </div>
+
+                        <div class="course-info">
+
+                            <div class="course-title">
+                                <h3>Web Development</h3>
+                                <span>85%</span>
+                            </div>
+
+                            <p>Year 1 • Semester 2</p>
+
+                            <div class="progress">
+                                <span style="width:85%"></span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="course">
+
+                        <div class="course-icon network">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+
+                        <div class="course-info">
+
+                            <div class="course-title">
+                                <h3>Computer Networks</h3>
+                                <span>64%</span>
+                            </div>
+
+                            <p>Year 1 • Semester 2</p>
+
+                            <div class="progress">
+                                <span style="width:64%"></span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="course">
+
+                        <div class="course-icon programming">
+                            <i class="fas fa-terminal"></i>
+                        </div>
+
+                        <div class="course-info">
+
+                            <div class="course-title">
+                                <h3>Structured Programming</h3>
+                                <span>91%</span>
+                            </div>
+
+                            <p>Year 1 • Semester 2</p>
+
+                            <div class="progress">
+                                <span style="width:91%"></span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+
+            <!-- DEADLINES -->
+
+            <div class="panel" id="assignments">
+
+                <div class="panel-header">
+
+                    <div>
+                        <h2>Upcoming Deadlines</h2>
+                        <p>Don't miss your submissions.</p>
+                    </div>
+
+                    <a href="#">View all</a>
+
+                </div>
+
+
+                <div class="deadline-list">
+
+                    <div class="deadline">
+
+                        <div class="date">
+                            <strong>04</strong>
+                            <small>NOV</small>
+                        </div>
+
+                        <div>
+                            <h3>Database Assignment</h3>
+                            <p>Normalization & ERD</p>
+                        </div>
+
+                        <span class="urgent">2 days</span>
+
+                    </div>
+
+
+                    <div class="deadline">
+
+                        <div class="date">
+                            <strong>07</strong>
+                            <small>NOV</small>
+                        </div>
+
+                        <div>
+                            <h3>Networking Project</h3>
+                            <p>LAN Configuration</p>
+                        </div>
+
+                        <span class="normal">5 days</span>
+
+                    </div>
+
+
+                    <div class="deadline">
+
+                        <div class="date">
+                            <strong>12</strong>
+                            <small>NOV</small>
+                        </div>
+
+                        <div>
+                            <h3>Web Development</h3>
+                            <p>Final Project</p>
+                        </div>
+
+                        <span class="normal">10 days</span>
+
+                    </div>
+
+
+                    <div class="deadline">
+
+                        <div class="date">
+                            <strong>18</strong>
+                            <small>NOV</small>
+                        </div>
+
+                        <div>
+                            <h3>Statistics Quiz</h3>
+                            <p>Probability & Distributions</p>
+                        </div>
+
+                        <span class="normal">16 days</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= EVENTS ================= -->
+
+        <div class="lower-grid" id="events">
+
+            <div class="panel">
+
+                <div class="panel-header">
+
+                    <div>
+                        <h2>Upcoming Events</h2>
+                        <p>Stay connected with campus life.</p>
+                    </div>
+
+                    <a href="#">Calendar</a>
+
+                </div>
+
+
+                <div class="events">
+
+                    <div class="event">
+
+                        <div class="event-date">
+                            <strong>05</strong>
+                            <small>NOV</small>
+                        </div>
+
+                        <div>
+                            <h3>Tech Innovation Meetup</h3>
+                            <p>
+                                <i class="fas fa-location-dot"></i>
+                                ICT Building • 2:00 PM
+                            </p>
+                        </div>
+
+                        <button>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="event">
+
+                        <div class="event-date">
+                            <strong>09</strong>
+                            <small>NOV</small>
+                        </div>
+
+                        <div>
+                            <h3>Career Development Workshop</h3>
+                            <p>
+                                <i class="fas fa-location-dot"></i>
+                                Main Hall • 10:00 AM
+                            </p>
+                        </div>
+
+                        <button>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="event">
+
+                        <div class="event-date">
+                            <strong>15</strong>
+                            <small>NOV</small>
+                        </div>
+
+                        <div>
+                            <h3>Student Developers Meetup</h3>
+                            <p>
+                                <i class="fas fa-location-dot"></i>
+                                Innovation Hub • 4:00 PM
+                            </p>
+                        </div>
+
+                        <button>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- COMMUNITY -->
+
+            <div class="panel" id="community">
+
+                <div class="panel-header">
+
+                    <div>
+                        <h2>Community</h2>
+                        <p>What's happening on campus?</p>
+                    </div>
+
+                    <a href="#">Explore</a>
+
+                </div>
+
+
+                <div class="post">
+
+                    <div class="post-user">
+
+                        <div class="mini-avatar">
+                            J
+                        </div>
+
+                        <div>
+                            <strong>James K.</strong>
+                            <small>2 hours ago</small>
+                        </div>
+
+                    </div>
+
+                    <p>
+                        Does anyone have good resources for
+                        learning SQL joins? 📚
+                    </p>
+
+                    <div class="post-actions">
+
+                        <button>
+                            <i class="far fa-heart"></i>
+                            12
+                        </button>
+
+                        <button>
+                            <i class="far fa-comment"></i>
+                            8
+                        </button>
+
+                        <button>
+                            <i class="fas fa-share"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="post">
+
+                    <div class="post-user">
+
+                        <div class="mini-avatar second">
+                            A
+                        </div>
+
+                        <div>
+                            <strong>Angela M.</strong>
+                            <small>5 hours ago</small>
+                        </div>
+
+                    </div>
+
+                    <p>
+                        Don't forget tomorrow's networking
+                        practical! Good luck everyone. 💻
+                    </p>
+
+                    <div class="post-actions">
+
+                        <button>
+                            <i class="far fa-heart"></i>
+                            24
+                        </button>
+
+                        <button>
+                            <i class="far fa-comment"></i>
+                            11
+                        </button>
+
+                        <button>
+                            <i class="fas fa-share"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-logo">
+            <i class="fas fa-graduation-cap"></i>
+            CampusConnect
+        </div>
+
+        <p>
+            Learning. Connecting. Growing.
+        </p>
+
+        <span>
+            © 2026 CampusConnect
+        </span>
+
+    </footer>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
